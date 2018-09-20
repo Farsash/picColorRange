@@ -1,6 +1,7 @@
 // Autor: Fedor Mikhaylov
 // vk.com/farsash
 
+console.log('RangeColor');
 
 // Шаманим
 var RangeColor = function( color1, color2, positionPercent ){
@@ -15,9 +16,7 @@ var RangeColor = function( color1, color2, positionPercent ){
   
   var lessers = CompareColor( rgb_1, rgb_2 );
   
-  for (var t = 0; t < 3; t++) {
-
-    
+  for (var t = 0; t < 3; t++) {    
     
     var data =  Math.abs(rgb_1[t] - rgb_2[t]);
  
@@ -27,11 +26,11 @@ var RangeColor = function( color1, color2, positionPercent ){
         colorLength.push(Math.abs(data));
     }
 
-
   }
+  
   var posColors = [];
   
-  var positionColor_r = Math.round(positionPercent / 100 *      colorLength[0]);  
+  var positionColor_r = Math.round(positionPercent / 100 * colorLength[0]);  
   posColors.push(positionColor_r);
   var positionColor_g = Math.round(positionPercent / 100 * colorLength[1]);
   posColors.push(positionColor_g);
@@ -53,8 +52,7 @@ var RangeColor = function( color1, color2, positionPercent ){
       colors.push(kst);
     }
     
-  }
-  
+  }  
   
   return('rgb(' + Math.abs(colors[0]) + ',' + Math.abs(colors[1]) + ',' + Math.abs(colors[2]) + ')');
   
