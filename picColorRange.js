@@ -3,7 +3,7 @@
 
 
 // Шаманим
-function RangeColor( color1, color2, positionPercent ){
+var RangeColor = function( color1, color2, positionPercent ){
 
   var colorLength = [];
   var colors = [];
