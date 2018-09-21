@@ -48,7 +48,8 @@ var Circles = {
     
     for ( var i = 0; i < this.obj.length; i++){   
 
-      if(this.obj[i].y > canvas.height || this.obj[i].y < 0 ) {
+      if(this.obj[i].y + this.rad> canvas.height || this.obj[i].y - this.rad< 0 ) {
+          
         this.obj[i].dy *= (-1);      
         
       }  
