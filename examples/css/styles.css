@@ -21,6 +21,7 @@ h2, h3 {
 h3 {
     font-size: 22px;    
     font-weight: 300;
+    padding-bottom: 15px;
 }
 
 h2 {
@@ -79,6 +80,16 @@ code {
 .exmpl {
     display: flex;
     justify-content: center;
+}
+
+.cont { 
+
+    padding-bottom: 30px;
+
+}
+
+.autor {
+    font-size: 10px;
 }
 
 canvas { display: block;  border-bottom: 1px solid #a0a1a7; }

@@ -15,10 +15,10 @@
         <div class="block">
             
             <h2> Описание </h2>
-            <p> picColorRange.js - специальный скрипт, который берёт градиент из двух цветов и возвращает промежуточный цвет, в зависимости от положения целевого объекта на градиенте. Такой подход избавляет нас от потребности использовать маски, расширяя возможности для визуализации данных </p>
+            <p><b>PicColorRange.js</b> - скрипт, который принимает в качестве аргумент два цвета градиента, положение объекта в процентах без значка "%" и возвращает промежуточный цвет, в зависимости от положения объекта. Такой подход избавляет нас от потребности использовать маски, расширяя возможности для визуализации данных </p>
             
             <h2> Применение </h2>
-            <p> Скрипт простой и достаточно его подключить к вашему HTML-документу и вызвать, когда необходимо применять его свойства. Скрипт принимает и отдаёт только RGB-цвета. </p>
+            <p> Скрипт прост в использовании, досататочно подключить к HTML-документу и вызвать функцию там, где необходимо применить свойства скрипта. Скрипт принимает и отдаёт только RGB-цвета </p>
             <code> 
             
                 &lt;script <span class="c_orange">src</span>=<span class="c_green">"picColorRange.js"</span>&gt;&lt;/script&gt;
@@ -29,22 +29,26 @@
                 <span class="c_comment">// Визуально функция выглядит так </span><br/>
                 var color = RangeColor( <span class="c_green">'rgb(255,0,0)'</span>, <span class="c_green">'rgb(0,255,0)'</span>, <span class="c_orange">50</span> ); <br/>
                 console.log(color) <span class="c_comment">//"rgb(127,128,0)"</span>
-            
             </code>
             
             <h2> Примеры </h2>
             <h3> Слайдер </h3>
             <p> Перемещая бегунок по градиенту, меняется цвет самого бегунка. </p>
-            <div class="exmpl"> 
-                <input class="slider" id="slider" type="range" min="0" max="100" value="50" step="2" />
+            <div class="cont">
+                <div class="exmpl mrg_bt"> 
+                    <input class="slider" id="slider" type="range" min="0" max="100" value="50" step="2" />
+                </div >
+                <a href="https://github.com/Farsash/picColorRange/blob/master/examples/slider.html"> Исходный код </a>
             </div>
-            <a href="#"> Исходный код </a>
             <h3> Canvas </h3>
-            <p> Каждому элементу canvas назначается собственный цвет в зависимости от положения на холсте. </p>
-            <div class="exmpl">            
-                <img class="fl_l" src="img/range.jpg"  height="320px"  width="10px"/><canvas id="myCanvas" width="480px" height="320px"></canvas>
-            </div> 
-            <a href="#"> Исходный код </a>
+            <p > Каждому элементу canvas назначается собственный цвет в зависимости от положения на холсте. </p>
+            <div class="cont">
+                <div class="exmpl mrg_bt">            
+                    <img class="fl_l" src="img/range.jpg"  height="320px"  width="10px"/><canvas id="myCanvas" width="480px" height="320px"></canvas>
+                </div> 
+                <a href="https://github.com/Farsash/picColorRange/blob/master/examples/canvas.html"> Исходный код </a>
+            </div>
+            <p class="c_comment autor"> Автор: Фёдор Михайлов, Санкт-Петебруг, Россия </p>
         </div>
         
         <script src="js/slider.js"></script>
