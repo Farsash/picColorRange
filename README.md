@@ -1,3 +1,3 @@
 # picColorRange
 
-[ Examples ](https://farsash.github.io/picColorRange/examples/)
+[ Examples ](https://teoyoung.github.io/picColorRange/examples/)
